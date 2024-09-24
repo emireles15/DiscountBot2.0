@@ -1,0 +1,3 @@
+<p>En Art Spa apreciamos la lealtad de nuestros clientes. </p>
+<p>¡Durante todo el mes de Septiembre, aprovecha el 2 x 1 1/2 en todos nuestros servicios!</p>
+<img alt="Embedded Image" src="data:image/jpeg;base64,{base64}" /> <br> <br>

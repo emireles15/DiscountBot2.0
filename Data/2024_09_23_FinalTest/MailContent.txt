@@ -1,0 +1,4 @@
+<p>In Muncher House we appreciate our customers. Please join the house of good tasting.</p>
+<img alt="Embedded Image" src="data:image/jpeg;base64,{base64_1}" /> <br> <br>
+<p>You will not regret about our dinners.</p>
+<img alt="Embedded Image" src="data:image/jpeg;base64,{base64_2}" /> <br> <br>

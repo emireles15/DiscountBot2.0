@@ -1,0 +1,2 @@
+<p>Esto es un anuncio publicitario</p>
+<img alt="Embedded Image" src="data:image/jpeg;base64,{base64_1}" /> <br> <br>

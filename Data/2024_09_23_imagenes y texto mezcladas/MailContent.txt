@@ -1,0 +1,4 @@
+<p>Prueba nuestra comida</p>
+<img alt="Embedded Image" src="data:image/jpeg;base64,{base64_1}" /> <br> <br>
+<p>sigue probando mas comida deliciosa</p>
+<img alt="Embedded Image" src="data:image/jpeg;base64,{base64_2}" /> <br> <br>

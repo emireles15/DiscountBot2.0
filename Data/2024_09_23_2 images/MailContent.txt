@@ -1,0 +1,2 @@
+<img alt="Embedded Image" src="data:image/jpeg;base64,{base64_1}" /> <br> <br>
+<img alt="Embedded Image" src="data:image/jpeg;base64,{base64_2}" /> <br> <br>
