@@ -98,7 +98,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart sap:VirtualizedContainerService.HintSize="876.8,571.2" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart sap:VirtualizedContainerService.HintSize="1172.8,571.2" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:String" Name="UserChoice" />
       <Variable x:TypeArguments="x:String" Name="NewFolderPath" />
@@ -118,11 +118,11 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
         <av:Point x:Key="ShapeLocation">75,95</av:Point>
         <av:Size x:Key="ShapeSize">49.6,49.6</av:Size>
-        <av:PointCollection x:Key="ConnectorLocation">124.6,119.8 154.6,119.8 154.6,120.2 175,120.2</av:PointCollection>
+        <av:PointCollection x:Key="ConnectorLocation">124.6,119.8 154.6,119.8 154.6,120.2 185,120.2</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID2</x:Reference>
+      <x:Reference>__ReferenceID20</x:Reference>
     </Flowchart.StartNode>
     <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_9">
       <sap:WorkflowViewStateService.ViewState>
@@ -143,9 +143,9 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:InputDialog>
       <FlowStep.Next>
-        <FlowSwitch x:TypeArguments="x:String" x:Name="__ReferenceID6" DisplayName="Flow Switch" Expression="[UserChoice]" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowSwitch`1_4">
+        <FlowSwitch x:TypeArguments="x:String" x:Name="__ReferenceID5" DisplayName="Flow Switch" Expression="[UserChoice]" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowSwitch`1_4">
           <FlowSwitch.Default>
-            <FlowStep x:Name="__ReferenceID9">
+            <FlowStep x:Name="__ReferenceID8" sap2010:WorkflowViewState.IdRef="FlowStep_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">315,625</av:Point>
@@ -183,13 +183,13 @@
                 <av:PointCollection x:Key="ConnectorLocation">315,790.2 275.4,790.2</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog - Add Text" sap:VirtualizedContainerService.HintSize="333.6,241.60000000000002" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="[&quot;Please enter the text to be added to the email body.&quot; &amp; vbCrLf &amp; &quot;(Text should be a single paragraph without line breaks)&quot;]" Title="Customize Email">
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog - Add Text" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="[&quot;Please enter the text to be added to the email body.&quot; &amp; vbCrLf &amp; &quot;(Text should be a single paragraph without line breaks)&quot;]" Title="Customize Email">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[textData]</OutArgument>
               </ui:InputDialog.Result>
             </ui:InputDialog>
             <FlowStep.Next>
-              <FlowStep x:Name="__ReferenceID10">
+              <FlowStep x:Name="__ReferenceID9" sap2010:WorkflowViewState.IdRef="FlowStep_3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <av:Point x:Key="ShapeLocation">165,755</av:Point>
@@ -216,7 +216,7 @@
               </FlowStep>
             </FlowStep.Next>
           </FlowStep>
-          <FlowStep x:Key="Image" x:Name="__ReferenceID14">
+          <FlowStep x:Key="Image" x:Name="__ReferenceID13" sap2010:WorkflowViewState.IdRef="FlowStep_7">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <av:Point x:Key="ShapeLocation">475,755</av:Point>
@@ -224,7 +224,7 @@
                 <av:PointCollection x:Key="ConnectorLocation">530.2,825.4 530.2,890.2 425.4,890.2</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:SelectFile DisplayName="Browse For File - Image" Filter="All files (*.*)|*.*" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[browsedImage]">
+            <ui:SelectFile DisplayName="Browse For File - Image" Filter="All files|*.*" sap:VirtualizedContainerService.HintSize="333.6,139.2" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[browsedImage]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -232,7 +232,7 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:SelectFile>
             <FlowStep.Next>
-              <FlowStep x:Name="__ReferenceID13">
+              <FlowStep x:Name="__ReferenceID12" sap2010:WorkflowViewState.IdRef="FlowStep_6">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <av:Point x:Key="ShapeLocation">315,855</av:Point>
@@ -248,7 +248,7 @@
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:CopyFile>
                 <FlowStep.Next>
-                  <FlowStep x:Name="__ReferenceID11">
+                  <FlowStep x:Name="__ReferenceID10" sap2010:WorkflowViewState.IdRef="FlowStep_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <av:Point x:Key="ShapeLocation">25,755</av:Point>
@@ -270,7 +270,7 @@
                       </sap:WorkflowViewStateService.ViewState>
                     </Assign>
                     <FlowStep.Next>
-                      <FlowStep x:Name="__ReferenceID12">
+                      <FlowStep x:Name="__ReferenceID11" sap2010:WorkflowViewState.IdRef="FlowStep_5">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <av:Point x:Key="ShapeLocation">25,625</av:Point>
@@ -301,7 +301,7 @@
               </FlowStep>
             </FlowStep.Next>
           </FlowStep>
-          <FlowStep x:Key="Finish" x:Name="__ReferenceID16" sap2010:WorkflowViewState.IdRef="FlowStep_2">
+          <FlowStep x:Key="Finish" x:Name="__ReferenceID15" sap2010:WorkflowViewState.IdRef="FlowStep_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <av:Point x:Key="ShapeLocation">635,755</av:Point>
@@ -317,7 +317,7 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:CreateFile>
             <FlowStep.Next>
-              <FlowStep x:Name="__ReferenceID17" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+              <FlowStep x:Name="__ReferenceID16" sap2010:WorkflowViewState.IdRef="FlowStep_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <av:Point x:Key="ShapeLocation">635,845</av:Point>
@@ -333,7 +333,7 @@
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:WriteTextFile>
                 <FlowStep.Next>
-                  <FlowStep x:Name="__ReferenceID19">
+                  <FlowStep x:Name="__ReferenceID18" sap2010:WorkflowViewState.IdRef="FlowStep_8">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <av:Point x:Key="ShapeLocation">775,845</av:Point>
@@ -349,7 +349,7 @@
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ReadRange>
                     <FlowStep.Next>
-                      <FlowStep x:Name="__ReferenceID18" sap2010:WorkflowViewState.IdRef="FlowStep_3">
+                      <FlowStep x:Name="__ReferenceID17" sap2010:WorkflowViewState.IdRef="FlowStep_3">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <av:Point x:Key="ShapeLocation">775,755</av:Point>
@@ -385,7 +385,7 @@
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:MultipleAssign>
                         <FlowStep.Next>
-                          <FlowStep x:Name="__ReferenceID20">
+                          <FlowStep x:Name="__ReferenceID19" sap2010:WorkflowViewState.IdRef="FlowStep_9">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <av:Point x:Key="ShapeLocation">925,755</av:Point>
@@ -431,118 +431,134 @@
       </FlowStep.Next>
     </FlowStep>
     <x:Reference>__ReferenceID1</x:Reference>
-    <FlowStep x:Name="__ReferenceID2" sap2010:WorkflowViewState.IdRef="FlowStep_5">
+    <FlowStep x:Name="__ReferenceID2" sap2010:WorkflowViewState.IdRef="FlowStep_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">175,85</av:Point>
+          <av:Point x:Key="ShapeLocation">325,85</av:Point>
           <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">285.4,120.2 325,120.2</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">435.4,120.2 475,120.2</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog - Campaign Name" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="[&quot;Hello&quot; &amp; vbCrLf &amp; _&#xA;&quot;Welcome to the Customize Email option. &quot; &amp; vbCrLf &amp; _&#xA;&quot;Please enter the name of the Email Campaign to be created: &quot;]" Title="Customize Email">
-        <ui:InputDialog.Result>
-          <OutArgument x:TypeArguments="x:String">[CampaignName]</OutArgument>
-        </ui:InputDialog.Result>
+      <Assign DisplayName="Assign-New Folder Path" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[NewFolderPath]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">["C:\Users\Windows10\Documents\UiPath\Proyectos\DiscountBot2.0\Data\" &amp; Now.ToString("yyyy_MM_dd") &amp; "_" &amp; CampaignName]</InArgument>
+        </Assign.Value>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-      </ui:InputDialog>
+      </Assign>
       <FlowStep.Next>
-        <FlowStep x:Name="__ReferenceID4" sap2010:WorkflowViewState.IdRef="FlowStep_3">
+        <FlowStep x:Name="__ReferenceID4" sap2010:WorkflowViewState.IdRef="FlowStep_6">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">325,85</av:Point>
+              <av:Point x:Key="ShapeLocation">475,85</av:Point>
               <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">435.4,120.2 475,120.2</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">585.4,120.2 615.4,120.2 615.4,230 560,230</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign DisplayName="Assign-New Folder Path" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="Assign_1">
-            <Assign.To>
-              <OutArgument x:TypeArguments="x:String">[NewFolderPath]</OutArgument>
-            </Assign.To>
-            <Assign.Value>
-              <InArgument x:TypeArguments="x:String">["C:\Users\Windows10\Documents\UiPath\Proyectos\DiscountBot2.0\Data\" &amp; Now.ToString("yyyy_MM_dd") &amp; "_" &amp; CampaignName]</InArgument>
-            </Assign.Value>
+          <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists - New Folder" Exists="[FolderExist]" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[NewFolderPath]" PathType="Folder">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-          </Assign>
+          </ui:PathExists>
           <FlowStep.Next>
-            <FlowStep x:Name="__ReferenceID5" sap2010:WorkflowViewState.IdRef="FlowStep_6">
+            <FlowDecision x:Name="__ReferenceID6" Condition="[FolderExist]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">475,85</av:Point>
-                  <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">585.4,120.2 615.4,120.2 615.4,230 560,230</av:PointCollection>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <av:Point x:Key="ShapeLocation">500,200</av:Point>
+                  <av:Size x:Key="ShapeSize">60,60</av:Size>
+                  <av:PointCollection x:Key="TrueConnector">500,230 500,230.2 435.4,230.2</av:PointCollection>
+                  <av:PointCollection x:Key="FalseConnector">530,260 530,290 530.2,290 530.2,305</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists - New Folder" Exists="[FolderExist]" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[NewFolderPath]" PathType="File">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </ui:PathExists>
-              <FlowStep.Next>
-                <FlowDecision x:Name="__ReferenceID7" Condition="[FolderExist]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+              <FlowDecision.True>
+                <FlowStep x:Name="__ReferenceID7" sap2010:WorkflowViewState.IdRef="FlowStep_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <av:Point x:Key="ShapeLocation">500,200</av:Point>
-                      <av:Size x:Key="ShapeSize">60,60</av:Size>
-                      <av:PointCollection x:Key="TrueConnector">500,230 500,230.2 435.4,230.2</av:PointCollection>
-                      <av:PointCollection x:Key="FalseConnector">530,260 530,290 530.2,290 530.2,305</av:PointCollection>
+                      <av:Point x:Key="ShapeLocation">325,195</av:Point>
+                      <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">325,230.2 240.2,230.2 240.2,155.4</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <FlowDecision.True>
-                    <FlowStep x:Name="__ReferenceID8">
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box - Folder exists" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;The folder already exists. Please create a folder with a different name.&quot;]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:MessageBox>
+                  <FlowStep.Next>
+                    <FlowStep x:Name="__ReferenceID20" sap2010:WorkflowViewState.IdRef="FlowStep_10">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">325,195</av:Point>
+                          <av:Point x:Key="ShapeLocation">185,85</av:Point>
                           <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">325,230.2 230.2,230.2 230.2,155.4</av:PointCollection>
+                          <av:PointCollection x:Key="ConnectorLocation">295.4,120.2 325,120.2</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box - Folder exists" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;The folder already exists. Please create a folder with a different name.&quot;]">
+                      <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[String.IsNullOrEmpty(CampaignName)]" DisplayName="While - Add Campaing Name" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                        <ui:InterruptibleWhile.Body>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,324.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog - Campaign Name" sap:VirtualizedContainerService.HintSize="382.4,264.8" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="[&quot;Hello&quot; &amp; vbCrLf &amp; _&#xA;&quot;Welcome to the Customize Email option. &quot; &amp; vbCrLf &amp; _&#xA;&quot;Please enter the name of the Email Campaign to be created: &quot;]" Title="Customize Email">
+                              <ui:InputDialog.Result>
+                                <OutArgument x:TypeArguments="x:String">[CampaignName]</OutArgument>
+                              </ui:InputDialog.Result>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:InputDialog>
+                          </Sequence>
+                        </ui:InterruptibleWhile.Body>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                      </ui:MessageBox>
+                      </ui:InterruptibleWhile>
                       <FlowStep.Next>
                         <x:Reference>__ReferenceID2</x:Reference>
                       </FlowStep.Next>
                     </FlowStep>
-                  </FlowDecision.True>
-                  <FlowDecision.False>
-                    <FlowStep x:Name="__ReferenceID15" sap2010:WorkflowViewState.IdRef="FlowStep_1">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">475,305</av:Point>
-                          <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">530.2,375.4 530.2,415</av:PointCollection>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[NewFolderPath]">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </ui:CreateDirectory>
-                      <FlowStep.Next>
-                        <x:Reference>__ReferenceID3</x:Reference>
-                      </FlowStep.Next>
-                    </FlowStep>
-                  </FlowDecision.False>
-                </FlowDecision>
-              </FlowStep.Next>
-            </FlowStep>
+                  </FlowStep.Next>
+                </FlowStep>
+              </FlowDecision.True>
+              <FlowDecision.False>
+                <FlowStep x:Name="__ReferenceID14" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <av:Point x:Key="ShapeLocation">475,305</av:Point>
+                      <av:Size x:Key="ShapeSize">110.4,70.4</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">530.2,375.4 530.2,415</av:PointCollection>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[NewFolderPath]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CreateDirectory>
+                  <FlowStep.Next>
+                    <x:Reference>__ReferenceID3</x:Reference>
+                  </FlowStep.Next>
+                </FlowStep>
+              </FlowDecision.False>
+            </FlowDecision>
           </FlowStep.Next>
         </FlowStep>
       </FlowStep.Next>
