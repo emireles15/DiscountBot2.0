@@ -224,7 +224,7 @@
                 <av:PointCollection x:Key="ConnectorLocation">530.2,825.4 530.2,890.2 425.4,890.2</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:SelectFile DisplayName="Browse For File - Image" Filter="All files|*.*" sap:VirtualizedContainerService.HintSize="333.6,139.2" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[browsedImage]">
+            <ui:SelectFile DisplayName="Browse For File - Image" Filter="All files|*.*" sap:VirtualizedContainerService.HintSize="110.4,70.4" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[browsedImage]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>

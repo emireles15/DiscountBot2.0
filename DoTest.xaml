@@ -112,7 +112,7 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DoTest" sap:VirtualizedContainerService.HintSize="636.8,2280.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DoTest" sap:VirtualizedContainerService.HintSize="1156,2186.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="testEmail" />
       <Variable x:TypeArguments="sd:DataTable" Name="RoutesDt" />
@@ -128,12 +128,12 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="574.4,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="[&quot;Hello!&quot; &amp; vbCrLf &amp; _&#xA;&quot;Welcome to Testing option. Please input the email whom we'll send the email for testing.&quot;]" Title="DoTest">
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="545.6,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="[&quot;Hello!&quot; &amp; vbCrLf &amp; _&#xA;&quot;Welcome to Testing option. Please input the email whom we'll send the email for testing.&quot;]" Title="DoTest">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[testEmail]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <Assign sap:VirtualizedContainerService.HintSize="574.4,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign sap:VirtualizedContainerService.HintSize="545.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:List(x:String)">[listTestEmail]</OutArgument>
       </Assign.To>
@@ -141,8 +141,8 @@
         <InArgument x:TypeArguments="scg:List(x:String)">[New List(Of String) From {testEmail}]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[RoutesDt]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="574.4,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Data\RouteRecord.xlsx" />
-    <Assign sap:VirtualizedContainerService.HintSize="574.4,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[RoutesDt]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="545.6,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Data\RouteRecord.xlsx" />
+    <Assign sap:VirtualizedContainerService.HintSize="545.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="s:String[]">[campaignArray]</OutArgument>
       </Assign.To>
@@ -150,13 +150,13 @@
         <InArgument x:TypeArguments="s:String[]">[RoutesDt.AsEnumerable().Select(Function(x) x("PathRecord").ToString).Reverse().Take(5).Reverse().ToArray()]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="574.4,327.2" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Please select the campaign we'd like to send the test email" Options="[campaignArray]" Title="DoTest">
+    <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="545.6,327.2" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Please select the campaign we'd like to send the test email" Options="[campaignArray]" Title="DoTest">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[selectedCampaign]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <ui:ReadTextFile File="{x:Null}" Content="[bodyContent]" DisplayName="Read Text File" FileName="[&quot;C:\Users\Windows10\Documents\UiPath\Proyectos\DiscountBot2.0\Data\&quot; &amp; selectedCampaign &amp; &quot;\MailContent.txt&quot;]" sap:VirtualizedContainerService.HintSize="574.4,112.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="574.4,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:ReadTextFile File="{x:Null}" Content="[bodyContent]" DisplayName="Read Text File" FileName="[&quot;C:\Users\Windows10\Documents\UiPath\Proyectos\DiscountBot2.0\Data\&quot; &amp; selectedCampaign &amp; &quot;\MailContent.txt&quot;]" sap:VirtualizedContainerService.HintSize="545.6,112.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="545.6,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -178,9 +178,9 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[ReplaceCounter &lt;= ImageCounter]" DisplayName="While - Replace in the body content with imageBase64String" sap:VirtualizedContainerService.HintSize="574.4,468.8" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[ReplaceCounter &lt;= ImageCounter]" DisplayName="While - Replace in the body content with imageBase64String" sap:VirtualizedContainerService.HintSize="545.6,440" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
       <ui:InterruptibleWhile.Body>
-        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540.8,322.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,293.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="InputFilePath" />
             <Variable x:TypeArguments="x:String" Name="ImageBase64Str" />
@@ -238,7 +238,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InterruptibleWhile>
-    <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentList="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Existing" AuthScopesInvalid="False" Body="[bodyContent]" ConnectionId="43573cb0-646e-4d18-a2f8-d0388b80dff8" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="574.4,482.4" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="Test Email" To="[listTestEmail]" UseConnectionService="True" UseSharedMailbox="False">
+    <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentList="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Existing" AuthScopesInvalid="False" Body="[bodyContent]" ConnectionId="43573cb0-646e-4d18-a2f8-d0388b80dff8" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="545.6,482.4" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="Test Email" To="[listTestEmail]" UseConnectionService="True" UseSharedMailbox="False">
       <umam:SendMailConnections.AttachmentsBackup>
         <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
           <usau:BackupSlot.BackupValues>

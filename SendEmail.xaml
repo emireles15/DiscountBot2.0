@@ -112,7 +112,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="592,2110.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="1156,1939.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="RoutesDt" />
       <Variable x:TypeArguments="s:String[]" Name="campaignArray" />
@@ -129,7 +129,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[RoutesDt]" DisplayName="Read Range Workbook - Campaigns" sap:VirtualizedContainerService.HintSize="529.6,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Data\RouteRecord.xlsx">
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[RoutesDt]" DisplayName="Read Range Workbook - Campaigns" sap:VirtualizedContainerService.HintSize="500.8,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Data\RouteRecord.xlsx">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -137,8 +137,8 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ReadRange>
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[CustomersDt]" DisplayName="Read Range Workbook - Customers" sap:VirtualizedContainerService.HintSize="529.6,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Sheet1" WorkbookPath="Customers\Customers.xlsx" />
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="529.6,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[CustomersDt]" DisplayName="Read Range Workbook - Customers" sap:VirtualizedContainerService.HintSize="500.8,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Sheet1" WorkbookPath="Customers\Customers.xlsx" />
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="500.8,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
@@ -160,7 +160,7 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog - Campaign Selection" sap:VirtualizedContainerService.HintSize="529.6,56.8" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="[&quot;Hello!&quot; &amp; vbCrLf &amp; _&#xD;&#xA;&quot;Welcome to the Send Campaign Email Service. Please choose the campaign that will be sent to our customers.&quot;]" Options="[campaignArray]" Title="Sending Campaign Emails">
+    <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog - Campaign Selection" sap:VirtualizedContainerService.HintSize="500.8,84.8" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="[&quot;Hello!&quot; &amp; vbCrLf &amp; _&#xA;&quot;Welcome to the Send Campaign Email Service. Please choose the campaign that will be sent to our customers.&quot;]" Options="[campaignArray]" Title="Sending Campaign Emails">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[selectedCampaign]</OutArgument>
       </ui:InputDialog.Result>
@@ -171,7 +171,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InputDialog>
-    <ui:ReadTextFile File="{x:Null}" Content="[bodyContent]" DisplayName="Read Text File" FileName="[&quot;C:\Users\Windows10\Documents\UiPath\Proyectos\DiscountBot2.0\Data\&quot; &amp; selectedCampaign &amp; &quot;\MailContent.txt&quot;]" sap:VirtualizedContainerService.HintSize="529.6,56.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_1">
+    <ui:ReadTextFile File="{x:Null}" Content="[bodyContent]" DisplayName="Read Text File" FileName="[&quot;C:\Users\Windows10\Documents\UiPath\Proyectos\DiscountBot2.0\Data\&quot; &amp; selectedCampaign &amp; &quot;\MailContent.txt&quot;]" sap:VirtualizedContainerService.HintSize="500.8,84.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -179,7 +179,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ReadTextFile>
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="529.6,56.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="500.8,84.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -207,9 +207,9 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[ReplaceCounter &lt;= ImageCounter]" DisplayName="While - Replace in the body content with imageBase64String" sap:VirtualizedContainerService.HintSize="529.6,56.8" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[ReplaceCounter &lt;= ImageCounter]" DisplayName="While - Replace in the body content with imageBase64String" sap:VirtualizedContainerService.HintSize="500.8,84.8" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
       <ui:InterruptibleWhile.Body>
-        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540.8,322.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,293.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="InputFilePath" />
             <Variable x:TypeArguments="x:String" Name="ImageBase64Str" />
@@ -267,24 +267,24 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InterruptibleWhile>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog - EmailTitle" sap:VirtualizedContainerService.HintSize="529.6,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Please input the title of the emails" Title="Sending Campaign Emails">
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog - EmailTitle" sap:VirtualizedContainerService.HintSize="500.8,84.8" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Please input the title of the emails" Title="Sending Campaign Emails">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[emailTitle]</OutArgument>
       </ui:InputDialog.Result>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InputDialog>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DiscountCustomersDt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="529.6,1100.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DiscountCustomersDt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="500.8,1072" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,912" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="467.2,883.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="scg:List(x:String)" Name="EmailAddressList" />
               <Variable x:TypeArguments="x:String" Name="ToMail" />
